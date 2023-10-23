@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Laboratorna 5</title>
+</head>
+
+<body>
+    <div class="signIn">
+
+        <h1 class="signIn__title">Замовити <span>Сторінку</span></h1>
+        <div class="signIn__text">Заповніть поля форми нижче щоб сгенерувати свою персональну сторінку.</div>
+
+        <form class="signIn__form" action="#">
+
+            <div class="signIn__input">
+                <input type="text" id="page" required>
+                <label for="page">Заголовок сторінки</label>
+            </div>
+
+            <div class="signIn__checkboxes checkboxes">
+                <div class="signIn__text">Картинки:</div>
+
+                <div class="checkboxes__container">
+                    <div class="signIn__checkbox">
+                        <input name="picture" type="checkbox" id="dog">
+                        <label for="dog">Собака</label>
+                    </div>
+
+                    <div class="signIn__checkbox">
+                        <input name="picture" type="checkbox" id="car">
+                        <label for="car">Автівка</label>
+                    </div>
+
+                    <div class="signIn__checkbox">
+                        <input name="picture" type="checkbox" id="flower">
+                        <label for="flower">Квітка</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signIn__input">
+                <input type="text" id="descr" required>
+                <label for="descr">Текст підпису</label>
+            </div>
+
+            <div class="signIn__input">
+                <div class="signIn__text">Колір фону сторінки:</div>
+                <input type="color" value="#ff0000" id="bgcolor">
+            </div>
+
+            <div class="textcolor">
+                <div class="signIn__text">Колір тексту сторінки:</div>
+                <div class="textcolor__colors">
+                    <div class="color1">
+                        <input type="radio" name="color" value="#08bb38" id="color1"> Обрати цей колір
+                    </div>
+                    <div class="color2">
+                        <input type="radio" name="color" value="#ffffff" id="color2"> Обрати цей колір
+                    </div>
+                    <div class="color3">
+                        <input type="radio" name="color" value="#ff533c" id="color3"> Обрати цей колір
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="signIn__btns">
+                <button type="submit" class="signIn__btn">Створити сторінку</button>
+                <button type="reset" class="signIn__btn">Сброс форми</button>
+            </div>
+        </form>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

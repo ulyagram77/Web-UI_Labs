@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Laboratorna 4</title>
+</head>
+<body>
+    <div class="signIn">
+
+        <h1 class="signIn__title">Особиста <span>Анкета</span></h1>
+        <div class="signIn__text">Заповніть поля форми нижче щоб сгенерувати свою автобіографію.</div>
+
+        <form class="signIn__form" action="#">
+
+            <div class="signIn__input">
+                <input type="text" id="name" required> 
+                <label for="name">Ім'я</label>
+            </div>
+
+            <div class="signIn__input">
+                <input type="text" id="surname" required>
+                <label for="surname">Прізвище</label>
+            </div>
+
+            <div class="signIn__input">
+                <input type="text" id="patronymic" required>
+                <label for="patronymic">Побатькові</label>
+            </div>
+
+            <div class="signIn__input">
+                <input type="number" id="birthyear" required>
+                <label for="birthyear">Рік народження</label>
+            </div>
+
+            <div class="signIn__input">
+                <input type="text" id="birthplace" required>
+                <label for="birthplace">Місто народження</label>
+            </div>
+
+            <div class="signIn__input">
+                <input type="text" id="hobby" required>
+                <label for="hobby">Ваше улюблене заняття</label>
+            </div>
+
+            <div class="signIn__input">
+                <input type="text" id="nonhobby" required>
+                <label for="nonhobby">Ваше не улюблене заняття</label>
+            </div>
+            
+            <button type="submit" class="signIn__btn">Створити біографію</button>
+        </form>
+
+
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
