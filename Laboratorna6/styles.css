@@ -1,0 +1,90 @@
+body {
+    background: #2e2e2e;
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Выравниваем элементы по центру горизонтально */
+}
+
+.pictures__row {
+    display: flex;
+    width: 50%; /* Делаем каждую строку 50% ширины родителя */
+    flex-wrap: wrap;
+    justify-content: space-around; /* Распределяем элементы внутри строки */
+    padding: 5px;
+}
+
+.pictures__img {
+    width: 48%; /* Устанавливаем ширину каждой картинки внутри строки */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.pictures__img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(79, 149, 234);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info input {
+    outline: none;
+    width: 48%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(79, 149, 234);
+    color: rgb(79, 149, 234);
+    background: transparent;
+    border-radius: 5px;
+}
+
+.slider-container {
+    margin: 0 auto;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.slide {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.slide img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btns button {
+    text-align: center;
+    border: 1px solid rgb(79, 149, 234);
+    color: rgb(79, 149, 234);
+    background: transparent;
+    border-radius: 5px;
+    height: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.btns button:hover {
+    border: 1px solid rgb(168, 195, 230);
+    color: rgb(168, 195, 230);
+}
