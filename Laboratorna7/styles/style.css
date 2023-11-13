@@ -1,0 +1,87 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.picture {
+    width: 450px;
+    border: 30px inset rgb(0, 0, 0);
+}
+.image {
+    width: 100%;
+    border: 30px inset gray;
+}
+
+.darkRed-border {
+    border: 30px inset rgb(104, 0, 0);
+}
+
+.red-border {
+    border: 30px inset rgb(243, 0, 0);
+}
+
+.btn {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.task {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture__second {
+    border: 30px inset rgb(255, 217, 0);
+}
+
+.text {
+    padding: 20px;
+    border: 2px solid rgb(255, 217, 0);
+    border-radius: 10px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.hide {
+    display: none;
+}
+
+.task2 {
+    background-color: #398aed;
+}
+
+.author {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(255, 217, 0);
+}
+
+.path {
+    width: 50%;
+}
+
+.task3,
+.container {
+    position: relative;
+}
+
+#im2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100px;
+}
