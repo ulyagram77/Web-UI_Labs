@@ -1,0 +1,17 @@
+.cities {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.img {
+    width: 30%;
+}
+
+img {
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
