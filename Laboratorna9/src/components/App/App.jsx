@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { ConfigProvider, Divider, Row, Col, Slider, Typography } from 'antd';
+
 import MyCounter from '../Counter/MyCounter/MyCounter';
 import CounterList from '../Counter/CounterList/CounterList';
 import Cart from '../Cart/Cart';
-import { ConfigProvider, Divider, Row, Col, Slider, Typography } from 'antd';
+
 import './App.css';
 
 const theme = {
@@ -10,7 +12,7 @@ const theme = {
     token: {
         // Seed Token
         colorPrimary: '#3DB0E3',
-        borderRadius: 2,
+        borderRadius: 7,
         colorPrimaryHover: '#3E72FF',
     },
 };
@@ -26,8 +28,7 @@ const products = [
         id: 1,
         name: 'Asus TUF Gaming',
         price: 1000,
-        quantity: 1,
-        total: 50,
+        quantity: 5,
         image: '/products/tuf.png',
     },
     {
@@ -35,7 +36,6 @@ const products = [
         name: 'Macbook Pro 13',
         price: 2000,
         quantity: 1,
-        total: 300,
         image: '/products/macb.png',
     },
     {
@@ -43,7 +43,6 @@ const products = [
         name: 'Lenovo ThinkPad',
         price: 700,
         quantity: 3,
-        total: 500,
         image: '/products/thnkp.png',
     },
     {
@@ -51,13 +50,26 @@ const products = [
         name: 'Asus ROG',
         price: 1500,
         quantity: 2,
-        total: 227,
         image: '/products/rog.png',
+    },
+    {
+        id: 5,
+        name: 'MSI QE-62',
+        price: 1300,
+        quantity: 1,
+        image: '/products/msi.png',
+    },
+    {
+        id: 6,
+        name: 'Asus VivoBook Pro 15',
+        price: 1100,
+        quantity: 4,
+        image: '/products/vivo15.png',
     },
 ];
 
 function App() {
-    const [rows, setRows] = useState(2);
+    const [rows, setRows] = useState(3);
     return (
         <>
             <ConfigProvider theme={theme}>
@@ -92,6 +104,9 @@ function App() {
                         />
                     </Col>
                 </Row>
+                <Divider>
+                    <b>TASK 3</b>
+                </Divider>
             </ConfigProvider>
         </>
     );
