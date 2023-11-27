@@ -1,0 +1,10 @@
+.hints {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background: #3db0e3;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}

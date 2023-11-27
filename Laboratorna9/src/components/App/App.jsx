@@ -4,6 +4,7 @@ import { ConfigProvider, Divider, Row, Col, Slider, Typography } from 'antd';
 import MyCounter from '../Counter/MyCounter/MyCounter';
 import CounterList from '../Counter/CounterList/CounterList';
 import Cart from '../Cart/Cart';
+import Game from '../Game/Game';
 
 import './App.css';
 
@@ -107,6 +108,7 @@ function App() {
                 <Divider>
                     <b>TASK 3</b>
                 </Divider>
+                <Game />
             </ConfigProvider>
         </>
     );
